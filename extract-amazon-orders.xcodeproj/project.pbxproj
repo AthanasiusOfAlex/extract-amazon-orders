@@ -1,0 +1,2151 @@
+// !$*UTF8*$!
+{
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "AmazonOrderExtractor::AmazonOrderExtractor" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_95";
+         buildPhases = (
+            "OBJ_98",
+            "OBJ_100"
+         );
+         dependencies = (
+            "OBJ_104",
+            "OBJ_106",
+            "OBJ_108"
+         );
+         name = "AmazonOrderExtractor";
+         productName = "AmazonOrderExtractor";
+         productReference = "AmazonOrderExtractor::AmazonOrderExtractor::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "AmazonOrderExtractor::AmazonOrderExtractor::Product" = {
+         isa = "PBXFileReference";
+         path = "AmazonOrderExtractor.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "AmazonOrderExtractor::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_111";
+         buildPhases = (
+            "OBJ_114"
+         );
+         dependencies = (
+         );
+         name = "AmazonOrderExtractorPackageDescription";
+         productName = "AmazonOrderExtractorPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "MicrosoftOutlookScripting::MicrosoftOutlookScripting" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_116";
+         buildPhases = (
+            "OBJ_119",
+            "OBJ_122"
+         );
+         dependencies = (
+            "OBJ_124"
+         );
+         name = "MicrosoftOutlookScripting";
+         productName = "MicrosoftOutlookScripting";
+         productReference = "MicrosoftOutlookScripting::MicrosoftOutlookScripting::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "MicrosoftOutlookScripting::MicrosoftOutlookScripting::Product" = {
+         isa = "PBXFileReference";
+         path = "MicrosoftOutlookScripting.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "MicrosoftOutlookScripting::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_126";
+         buildPhases = (
+            "OBJ_129"
+         );
+         dependencies = (
+         );
+         name = "MicrosoftOutlookScriptingPackageDescription";
+         productName = "MicrosoftOutlookScriptingPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "English";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_87";
+         projectDirPath = ".";
+         targets = (
+            "AmazonOrderExtractor::AmazonOrderExtractor",
+            "AmazonOrderExtractor::SwiftPMPackageDescription",
+            "MicrosoftOutlookScripting::MicrosoftOutlookScripting",
+            "MicrosoftOutlookScripting::SwiftPMPackageDescription",
+            "ScriptingUtilities::ScriptingUtilities",
+            "ScriptingUtilities::SwiftPMPackageDescription",
+            "SwiftSoup::SwiftSoup",
+            "SwiftSoup::SwiftPMPackageDescription",
+            "extract-amazon-orders::extract-amazon-orders",
+            "extract-amazon-orders::SwiftPMPackageDescription",
+            "extract-amazon-orders::extract-amazon-ordersPackageTests::ProductTarget",
+            "extract-amazon-orders::extract-amazon-ordersTests"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_11"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_100" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_101",
+            "OBJ_102",
+            "OBJ_103"
+         );
+      };
+      "OBJ_101" = {
+         isa = "PBXBuildFile";
+         fileRef = "SwiftSoup::SwiftSoup::Product";
+      };
+      "OBJ_102" = {
+         isa = "PBXBuildFile";
+         fileRef = "MicrosoftOutlookScripting::MicrosoftOutlookScripting::Product";
+      };
+      "OBJ_103" = {
+         isa = "PBXBuildFile";
+         fileRef = "ScriptingUtilities::ScriptingUtilities::Product";
+      };
+      "OBJ_104" = {
+         isa = "PBXTargetDependency";
+         target = "SwiftSoup::SwiftSoup";
+      };
+      "OBJ_106" = {
+         isa = "PBXTargetDependency";
+         target = "MicrosoftOutlookScripting::MicrosoftOutlookScripting";
+      };
+      "OBJ_108" = {
+         isa = "PBXTargetDependency";
+         target = "ScriptingUtilities::ScriptingUtilities";
+      };
+      "OBJ_11" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_12",
+            "OBJ_13"
+         );
+         name = "extract-amazon-ordersTests";
+         path = "Tests/extract-amazon-ordersTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_111" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_112",
+            "OBJ_113"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_112" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Debug";
+      };
+      "OBJ_113" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Release";
+      };
+      "OBJ_114" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_115"
+         );
+      };
+      "OBJ_115" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_116" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_117",
+            "OBJ_118"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_117" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/MicrosoftOutlookScripting_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "MicrosoftOutlookScripting";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "MicrosoftOutlookScripting";
+         };
+         name = "Debug";
+      };
+      "OBJ_118" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/MicrosoftOutlookScripting_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "MicrosoftOutlookScripting";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "MicrosoftOutlookScripting";
+         };
+         name = "Release";
+      };
+      "OBJ_119" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_120",
+            "OBJ_121"
+         );
+      };
+      "OBJ_12" = {
+         isa = "PBXFileReference";
+         path = "XCTestManifests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_120" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_79";
+      };
+      "OBJ_121" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_80";
+      };
+      "OBJ_122" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_123"
+         );
+      };
+      "OBJ_123" = {
+         isa = "PBXBuildFile";
+         fileRef = "ScriptingUtilities::ScriptingUtilities::Product";
+      };
+      "OBJ_124" = {
+         isa = "PBXTargetDependency";
+         target = "ScriptingUtilities::ScriptingUtilities";
+      };
+      "OBJ_126" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_127",
+            "OBJ_128"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_127" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Debug";
+      };
+      "OBJ_128" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Release";
+      };
+      "OBJ_129" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_130"
+         );
+      };
+      "OBJ_13" = {
+         isa = "PBXFileReference";
+         path = "extract_amazon_ordersTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_130" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_81";
+      };
+      "OBJ_131" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_132",
+            "OBJ_133"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_132" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/ScriptingUtilities_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "ScriptingUtilities";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "ScriptingUtilities";
+         };
+         name = "Debug";
+      };
+      "OBJ_133" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/ScriptingUtilities_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "ScriptingUtilities";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "ScriptingUtilities";
+         };
+         name = "Release";
+      };
+      "OBJ_134" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_135",
+            "OBJ_136"
+         );
+      };
+      "OBJ_135" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_84";
+      };
+      "OBJ_136" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_85";
+      };
+      "OBJ_137" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_139" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_140",
+            "OBJ_141"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_14" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_15",
+            "OBJ_19",
+            "OBJ_77",
+            "OBJ_82"
+         );
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_140" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Debug";
+      };
+      "OBJ_141" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Release";
+      };
+      "OBJ_142" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_143"
+         );
+      };
+      "OBJ_143" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_86";
+      };
+      "OBJ_144" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_145",
+            "OBJ_146"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_145" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/SwiftSoup_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "SwiftSoup";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "SwiftSoup";
+         };
+         name = "Debug";
+      };
+      "OBJ_146" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/SwiftSoup_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "SwiftSoup";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "SwiftSoup";
+         };
+         name = "Release";
+      };
+      "OBJ_147" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_148",
+            "OBJ_149",
+            "OBJ_150",
+            "OBJ_151",
+            "OBJ_152",
+            "OBJ_153",
+            "OBJ_154",
+            "OBJ_155",
+            "OBJ_156",
+            "OBJ_157",
+            "OBJ_158",
+            "OBJ_159",
+            "OBJ_160",
+            "OBJ_161",
+            "OBJ_162",
+            "OBJ_163",
+            "OBJ_164",
+            "OBJ_165",
+            "OBJ_166",
+            "OBJ_167",
+            "OBJ_168",
+            "OBJ_169",
+            "OBJ_170",
+            "OBJ_171",
+            "OBJ_172",
+            "OBJ_173",
+            "OBJ_174",
+            "OBJ_175",
+            "OBJ_176",
+            "OBJ_177",
+            "OBJ_178",
+            "OBJ_179",
+            "OBJ_180",
+            "OBJ_181",
+            "OBJ_182",
+            "OBJ_183",
+            "OBJ_184",
+            "OBJ_185",
+            "OBJ_186",
+            "OBJ_187",
+            "OBJ_188",
+            "OBJ_189",
+            "OBJ_190",
+            "OBJ_191",
+            "OBJ_192",
+            "OBJ_193",
+            "OBJ_194",
+            "OBJ_195",
+            "OBJ_196",
+            "OBJ_197",
+            "OBJ_198",
+            "OBJ_199",
+            "OBJ_200",
+            "OBJ_201",
+            "OBJ_202",
+            "OBJ_203"
+         );
+      };
+      "OBJ_148" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_149" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_15" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_16",
+            "OBJ_18"
+         );
+         name = "AmazonOrderExtractor";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_150" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_23";
+      };
+      "OBJ_151" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_24";
+      };
+      "OBJ_152" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_25";
+      };
+      "OBJ_153" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_26";
+      };
+      "OBJ_154" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_27";
+      };
+      "OBJ_155" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+      };
+      "OBJ_156" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_29";
+      };
+      "OBJ_157" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_158" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_31";
+      };
+      "OBJ_159" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_32";
+      };
+      "OBJ_16" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_17"
+         );
+         name = "AmazonOrderExtractor";
+         path = ".build/checkouts/AmazonOrderExtractor.git--3769180048078329397/Sources/AmazonOrderExtractor";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_160" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_33";
+      };
+      "OBJ_161" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_34";
+      };
+      "OBJ_162" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_163" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_36";
+      };
+      "OBJ_164" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_37";
+      };
+      "OBJ_165" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_38";
+      };
+      "OBJ_166" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_39";
+      };
+      "OBJ_167" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_40";
+      };
+      "OBJ_168" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_41";
+      };
+      "OBJ_169" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_42";
+      };
+      "OBJ_17" = {
+         isa = "PBXFileReference";
+         path = "AmazonOrderExtractor.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_170" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_43";
+      };
+      "OBJ_171" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_44";
+      };
+      "OBJ_172" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_45";
+      };
+      "OBJ_173" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_46";
+      };
+      "OBJ_174" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_47";
+      };
+      "OBJ_175" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_48";
+      };
+      "OBJ_176" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_49";
+      };
+      "OBJ_177" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_50";
+      };
+      "OBJ_178" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_51";
+      };
+      "OBJ_179" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_52";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/AmazonOrderExtractor.git--3769180048078329397/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_180" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_53";
+      };
+      "OBJ_181" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_54";
+      };
+      "OBJ_182" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_55";
+      };
+      "OBJ_183" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_56";
+      };
+      "OBJ_184" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_57";
+      };
+      "OBJ_185" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_58";
+      };
+      "OBJ_186" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_59";
+      };
+      "OBJ_187" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_60";
+      };
+      "OBJ_188" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_61";
+      };
+      "OBJ_189" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_62";
+      };
+      "OBJ_19" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_20",
+            "OBJ_21",
+            "OBJ_22",
+            "OBJ_23",
+            "OBJ_24",
+            "OBJ_25",
+            "OBJ_26",
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_29",
+            "OBJ_30",
+            "OBJ_31",
+            "OBJ_32",
+            "OBJ_33",
+            "OBJ_34",
+            "OBJ_35",
+            "OBJ_36",
+            "OBJ_37",
+            "OBJ_38",
+            "OBJ_39",
+            "OBJ_40",
+            "OBJ_41",
+            "OBJ_42",
+            "OBJ_43",
+            "OBJ_44",
+            "OBJ_45",
+            "OBJ_46",
+            "OBJ_47",
+            "OBJ_48",
+            "OBJ_49",
+            "OBJ_50",
+            "OBJ_51",
+            "OBJ_52",
+            "OBJ_53",
+            "OBJ_54",
+            "OBJ_55",
+            "OBJ_56",
+            "OBJ_57",
+            "OBJ_58",
+            "OBJ_59",
+            "OBJ_60",
+            "OBJ_61",
+            "OBJ_62",
+            "OBJ_63",
+            "OBJ_64",
+            "OBJ_65",
+            "OBJ_66",
+            "OBJ_67",
+            "OBJ_68",
+            "OBJ_69",
+            "OBJ_70",
+            "OBJ_71",
+            "OBJ_72",
+            "OBJ_73",
+            "OBJ_74",
+            "OBJ_75",
+            "OBJ_76"
+         );
+         name = "SwiftSoup";
+         path = ".build/checkouts/SwiftSoup.git--9036523787764935322/Sources";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_190" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_63";
+      };
+      "OBJ_191" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_64";
+      };
+      "OBJ_192" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_65";
+      };
+      "OBJ_193" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_66";
+      };
+      "OBJ_194" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_67";
+      };
+      "OBJ_195" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_68";
+      };
+      "OBJ_196" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_69";
+      };
+      "OBJ_197" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_70";
+      };
+      "OBJ_198" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_71";
+      };
+      "OBJ_199" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_72";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/SwiftSoup.git--9036523787764935322/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_200" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_73";
+      };
+      "OBJ_201" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_74";
+      };
+      "OBJ_202" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_75";
+      };
+      "OBJ_203" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_76";
+      };
+      "OBJ_204" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_206" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_207",
+            "OBJ_208"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_207" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_208" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Release";
+      };
+      "OBJ_209" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_210"
+         );
+      };
+      "OBJ_21" = {
+         isa = "PBXFileReference";
+         path = "ArrayExt.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_210" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_212" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_213",
+            "OBJ_214"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_213" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/extract_amazon_orders_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "extract-amazon-orders";
+         };
+         name = "Debug";
+      };
+      "OBJ_214" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/extract_amazon_orders_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "extract-amazon-orders";
+         };
+         name = "Release";
+      };
+      "OBJ_215" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_216"
+         );
+      };
+      "OBJ_216" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_217" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_218",
+            "OBJ_219",
+            "OBJ_220",
+            "OBJ_221"
+         );
+      };
+      "OBJ_218" = {
+         isa = "PBXBuildFile";
+         fileRef = "AmazonOrderExtractor::AmazonOrderExtractor::Product";
+      };
+      "OBJ_219" = {
+         isa = "PBXBuildFile";
+         fileRef = "SwiftSoup::SwiftSoup::Product";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "Attribute.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_220" = {
+         isa = "PBXBuildFile";
+         fileRef = "MicrosoftOutlookScripting::MicrosoftOutlookScripting::Product";
+      };
+      "OBJ_221" = {
+         isa = "PBXBuildFile";
+         fileRef = "ScriptingUtilities::ScriptingUtilities::Product";
+      };
+      "OBJ_222" = {
+         isa = "PBXTargetDependency";
+         target = "AmazonOrderExtractor::AmazonOrderExtractor";
+      };
+      "OBJ_223" = {
+         isa = "PBXTargetDependency";
+         target = "SwiftSoup::SwiftSoup";
+      };
+      "OBJ_224" = {
+         isa = "PBXTargetDependency";
+         target = "MicrosoftOutlookScripting::MicrosoftOutlookScripting";
+      };
+      "OBJ_225" = {
+         isa = "PBXTargetDependency";
+         target = "ScriptingUtilities::ScriptingUtilities";
+      };
+      "OBJ_227" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_228",
+            "OBJ_229"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_228" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Debug";
+      };
+      "OBJ_229" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Release";
+      };
+      "OBJ_23" = {
+         isa = "PBXFileReference";
+         path = "Attributes.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_230" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_231"
+         );
+      };
+      "OBJ_231" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_233" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_234",
+            "OBJ_235"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_234" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_235" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_236" = {
+         isa = "PBXTargetDependency";
+         target = "extract-amazon-orders::extract-amazon-ordersTests";
+      };
+      "OBJ_238" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_239",
+            "OBJ_240"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_239" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/extract_amazon_ordersTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "extract-amazon-ordersTests";
+         };
+         name = "Debug";
+      };
+      "OBJ_24" = {
+         isa = "PBXFileReference";
+         path = "BooleanAttribute.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_240" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/extract_amazon_ordersTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "extract-amazon-ordersTests";
+         };
+         name = "Release";
+      };
+      "OBJ_241" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_242",
+            "OBJ_243"
+         );
+      };
+      "OBJ_242" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_12";
+      };
+      "OBJ_243" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_244" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_245",
+            "OBJ_246",
+            "OBJ_247",
+            "OBJ_248"
+         );
+      };
+      "OBJ_245" = {
+         isa = "PBXBuildFile";
+         fileRef = "AmazonOrderExtractor::AmazonOrderExtractor::Product";
+      };
+      "OBJ_246" = {
+         isa = "PBXBuildFile";
+         fileRef = "SwiftSoup::SwiftSoup::Product";
+      };
+      "OBJ_247" = {
+         isa = "PBXBuildFile";
+         fileRef = "MicrosoftOutlookScripting::MicrosoftOutlookScripting::Product";
+      };
+      "OBJ_248" = {
+         isa = "PBXBuildFile";
+         fileRef = "ScriptingUtilities::ScriptingUtilities::Product";
+      };
+      "OBJ_249" = {
+         isa = "PBXTargetDependency";
+         target = "extract-amazon-orders::extract-amazon-orders";
+      };
+      "OBJ_25" = {
+         isa = "PBXFileReference";
+         path = "CharacterExt.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_250" = {
+         isa = "PBXTargetDependency";
+         target = "AmazonOrderExtractor::AmazonOrderExtractor";
+      };
+      "OBJ_251" = {
+         isa = "PBXTargetDependency";
+         target = "SwiftSoup::SwiftSoup";
+      };
+      "OBJ_252" = {
+         isa = "PBXTargetDependency";
+         target = "MicrosoftOutlookScripting::MicrosoftOutlookScripting";
+      };
+      "OBJ_253" = {
+         isa = "PBXTargetDependency";
+         target = "ScriptingUtilities::ScriptingUtilities";
+      };
+      "OBJ_26" = {
+         isa = "PBXFileReference";
+         path = "CharacterReader.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_27" = {
+         isa = "PBXFileReference";
+         path = "Cleaner.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "Collector.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_29" = {
+         isa = "PBXFileReference";
+         path = "CombiningEvaluator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "DEBUG=1",
+               "$(inherited)"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXFileReference";
+         path = "Comment.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_31" = {
+         isa = "PBXFileReference";
+         path = "Connection.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_32" = {
+         isa = "PBXFileReference";
+         path = "DataNode.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_33" = {
+         isa = "PBXFileReference";
+         path = "DataUtil.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_34" = {
+         isa = "PBXFileReference";
+         path = "Document.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_35" = {
+         isa = "PBXFileReference";
+         path = "DocumentType.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_36" = {
+         isa = "PBXFileReference";
+         path = "Element.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_37" = {
+         isa = "PBXFileReference";
+         path = "Elements.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_38" = {
+         isa = "PBXFileReference";
+         path = "Entities.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_39" = {
+         isa = "PBXFileReference";
+         path = "Evaluator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXFileReference";
+         path = "Exception.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_41" = {
+         isa = "PBXFileReference";
+         path = "FormElement.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_42" = {
+         isa = "PBXFileReference";
+         path = "HtmlTreeBuilder.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_43" = {
+         isa = "PBXFileReference";
+         path = "HtmlTreeBuilderState.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_44" = {
+         isa = "PBXFileReference";
+         path = "HttpStatusException.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_45" = {
+         isa = "PBXFileReference";
+         path = "Node.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_46" = {
+         isa = "PBXFileReference";
+         path = "NodeTraversor.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_47" = {
+         isa = "PBXFileReference";
+         path = "NodeVisitor.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_48" = {
+         isa = "PBXFileReference";
+         path = "OrderedDictionary.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_49" = {
+         isa = "PBXFileReference";
+         path = "OrderedSet.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_10",
+            "OBJ_14",
+            "OBJ_87"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "PBXFileReference";
+         path = "ParseError.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_51" = {
+         isa = "PBXFileReference";
+         path = "ParseErrorList.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_52" = {
+         isa = "PBXFileReference";
+         path = "ParseSettings.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_53" = {
+         isa = "PBXFileReference";
+         path = "Parser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_54" = {
+         isa = "PBXFileReference";
+         path = "Pattern.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_55" = {
+         isa = "PBXFileReference";
+         path = "QueryParser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_56" = {
+         isa = "PBXFileReference";
+         path = "Selector.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_57" = {
+         isa = "PBXFileReference";
+         path = "SerializationException.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_58" = {
+         isa = "PBXFileReference";
+         path = "SimpleDictionary.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_59" = {
+         isa = "PBXFileReference";
+         path = "StreamReader.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_60" = {
+         isa = "PBXFileReference";
+         path = "String.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_61" = {
+         isa = "PBXFileReference";
+         path = "StringBuilder.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_62" = {
+         isa = "PBXFileReference";
+         path = "StringUtil.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_63" = {
+         isa = "PBXFileReference";
+         path = "StructuralEvaluator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_64" = {
+         isa = "PBXFileReference";
+         path = "SwiftSoup.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_65" = {
+         isa = "PBXFileReference";
+         path = "Tag.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_66" = {
+         isa = "PBXFileReference";
+         path = "TextNode.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_67" = {
+         isa = "PBXFileReference";
+         path = "Token.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_68" = {
+         isa = "PBXFileReference";
+         path = "TokenQueue.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_69" = {
+         isa = "PBXFileReference";
+         path = "Tokeniser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_70" = {
+         isa = "PBXFileReference";
+         path = "TokeniserState.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_71" = {
+         isa = "PBXFileReference";
+         path = "TreeBuilder.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_72" = {
+         isa = "PBXFileReference";
+         path = "UnicodeScalar.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_73" = {
+         isa = "PBXFileReference";
+         path = "Validate.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_74" = {
+         isa = "PBXFileReference";
+         path = "Whitelist.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_75" = {
+         isa = "PBXFileReference";
+         path = "XmlDeclaration.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_76" = {
+         isa = "PBXFileReference";
+         path = "XmlTreeBuilder.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_77" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_78",
+            "OBJ_81"
+         );
+         name = "MicrosoftOutlookScripting";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_78" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_79",
+            "OBJ_80"
+         );
+         name = "MicrosoftOutlookScripting";
+         path = ".build/checkouts/MicrosoftOutlookScripting.git--7092685290658155050/Sources/MicrosoftOutlookScripting";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_79" = {
+         isa = "PBXFileReference";
+         path = "MicrosoftOutlook.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9"
+         );
+         name = "extract-amazon-orders";
+         path = "Sources/extract-amazon-orders";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_80" = {
+         isa = "PBXFileReference";
+         path = "MicrosoftOutlookScripting.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_81" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/MicrosoftOutlookScripting.git--7092685290658155050/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_82" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_83",
+            "OBJ_86"
+         );
+         name = "ScriptingUtilities";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_83" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_84",
+            "OBJ_85"
+         );
+         name = "ScriptingUtilities";
+         path = ".build/checkouts/ScriptingUtilities.git--2007011613481348713/Sources/ScriptingUtilities";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_84" = {
+         isa = "PBXFileReference";
+         path = "AppUtilities.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_85" = {
+         isa = "PBXFileReference";
+         path = "SundryUtilities.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_86" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/ScriptingUtilities.git--2007011613481348713/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_87" = {
+         isa = "PBXGroup";
+         children = (
+            "ScriptingUtilities::ScriptingUtilities::Product",
+            "extract-amazon-orders::extract-amazon-orders::Product",
+            "AmazonOrderExtractor::AmazonOrderExtractor::Product",
+            "extract-amazon-orders::extract-amazon-ordersTests::Product",
+            "SwiftSoup::SwiftSoup::Product",
+            "MicrosoftOutlookScripting::MicrosoftOutlookScripting::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "main.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_95" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_96",
+            "OBJ_97"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_96" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/AmazonOrderExtractor_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "AmazonOrderExtractor";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "AmazonOrderExtractor";
+         };
+         name = "Debug";
+      };
+      "OBJ_97" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "extract-amazon-orders.xcodeproj/AmazonOrderExtractor_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "AmazonOrderExtractor";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "AmazonOrderExtractor";
+         };
+         name = "Release";
+      };
+      "OBJ_98" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_99"
+         );
+      };
+      "OBJ_99" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_17";
+      };
+      "ScriptingUtilities::ScriptingUtilities" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_131";
+         buildPhases = (
+            "OBJ_134",
+            "OBJ_137"
+         );
+         dependencies = (
+         );
+         name = "ScriptingUtilities";
+         productName = "ScriptingUtilities";
+         productReference = "ScriptingUtilities::ScriptingUtilities::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "ScriptingUtilities::ScriptingUtilities::Product" = {
+         isa = "PBXFileReference";
+         path = "ScriptingUtilities.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "ScriptingUtilities::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_139";
+         buildPhases = (
+            "OBJ_142"
+         );
+         dependencies = (
+         );
+         name = "ScriptingUtilitiesPackageDescription";
+         productName = "ScriptingUtilitiesPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "SwiftSoup::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_206";
+         buildPhases = (
+            "OBJ_209"
+         );
+         dependencies = (
+         );
+         name = "SwiftSoupPackageDescription";
+         productName = "SwiftSoupPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "SwiftSoup::SwiftSoup" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_144";
+         buildPhases = (
+            "OBJ_147",
+            "OBJ_204"
+         );
+         dependencies = (
+         );
+         name = "SwiftSoup";
+         productName = "SwiftSoup";
+         productReference = "SwiftSoup::SwiftSoup::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "SwiftSoup::SwiftSoup::Product" = {
+         isa = "PBXFileReference";
+         path = "SwiftSoup.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "extract-amazon-orders::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_227";
+         buildPhases = (
+            "OBJ_230"
+         );
+         dependencies = (
+         );
+         name = "extract-amazon-ordersPackageDescription";
+         productName = "extract-amazon-ordersPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "extract-amazon-orders::extract-amazon-orders" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_212";
+         buildPhases = (
+            "OBJ_215",
+            "OBJ_217"
+         );
+         dependencies = (
+            "OBJ_222",
+            "OBJ_223",
+            "OBJ_224",
+            "OBJ_225"
+         );
+         name = "extract-amazon-orders";
+         productName = "extract_amazon_orders";
+         productReference = "extract-amazon-orders::extract-amazon-orders::Product";
+         productType = "com.apple.product-type.tool";
+      };
+      "extract-amazon-orders::extract-amazon-orders::Product" = {
+         isa = "PBXFileReference";
+         path = "extract-amazon-orders";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "extract-amazon-orders::extract-amazon-ordersPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_233";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_236"
+         );
+         name = "extract-amazon-ordersPackageTests";
+         productName = "extract-amazon-ordersPackageTests";
+      };
+      "extract-amazon-orders::extract-amazon-ordersTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_238";
+         buildPhases = (
+            "OBJ_241",
+            "OBJ_244"
+         );
+         dependencies = (
+            "OBJ_249",
+            "OBJ_250",
+            "OBJ_251",
+            "OBJ_252",
+            "OBJ_253"
+         );
+         name = "extract-amazon-ordersTests";
+         productName = "extract_amazon_ordersTests";
+         productReference = "extract-amazon-orders::extract-amazon-ordersTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "extract-amazon-orders::extract-amazon-ordersTests::Product" = {
+         isa = "PBXFileReference";
+         path = "extract_amazon_ordersTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+   };
+   rootObject = "OBJ_1";
+}

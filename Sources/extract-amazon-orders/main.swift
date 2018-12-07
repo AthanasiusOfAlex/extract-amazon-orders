@@ -12,20 +12,6 @@ do {
     }
 }
 
-//// MARK - Check to see if the file exists.
-//do {
-//    func fileExists() -> Bool {
-//        let url = outputFile.absoluteURL.deletingLastPathComponent()
-//        let fileManager = FileManager.default
-//        
-//        print(url.absoluteString)
-//        print(fileManager.fileExists(atPath: url.absoluteString))
-//        return fileManager.fileExists(atPath: url.absoluteString)
-//    }
-//    
-//    guard fileExists() else { exit(1) }
-//}
-
 // Print out the links
 do {
     printListOfLinks(outFileUrl: outputFile)

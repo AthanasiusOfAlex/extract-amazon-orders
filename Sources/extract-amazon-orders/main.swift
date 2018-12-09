@@ -12,7 +12,7 @@ do {
     }
 }
 
-// Print out the links
+// MARK - open up messages in new window in Chrome
 do {
-    printListOfLinks(outFileUrl: outputFile)
+   openLinksInChrome()
 }

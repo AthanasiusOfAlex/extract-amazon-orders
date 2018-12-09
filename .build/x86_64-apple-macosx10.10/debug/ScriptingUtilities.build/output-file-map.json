@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.build/master.swiftdeps"
+  },
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/ScriptingUtilities.git--2007011613481348713/Sources/ScriptingUtilities/AppUtilities.swift": {
+    "dependencies": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.build/AppUtilities.d",
+    "object": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.build/AppUtilities.swift.o",
+    "swiftmodule": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.build/AppUtilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.build/AppUtilities.swiftdeps"
+  },
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/ScriptingUtilities.git--2007011613481348713/Sources/ScriptingUtilities/SundryUtilities.swift": {
+    "dependencies": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.build/SundryUtilities.d",
+    "object": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.build/SundryUtilities.swift.o",
+    "swiftmodule": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.build/SundryUtilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.build/SundryUtilities.swiftdeps"
+  }
+}

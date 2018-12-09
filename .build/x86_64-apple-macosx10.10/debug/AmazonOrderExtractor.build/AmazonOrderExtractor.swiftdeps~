@@ -1,0 +1,698 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "receiptCategory"
+- "searchString"
+- "regexPattern"
+- "getMessages"
+- "EmailAddress"
+- "makeOrderSummaryLink"
+- "printListOfLinks"
+provides-nominal:
+- "20AmazonOrderExtractor12EmailAddressV"
+provides-member:
+- ["SS", ""]
+- ["20AmazonOrderExtractor12EmailAddressV", ""]
+- ["25MicrosoftOutlookScripting0aB7MessageP", ""]
+- ["SS", "contains"]
+- ["20AmazonOrderExtractor12EmailAddressV", "name"]
+- ["20AmazonOrderExtractor12EmailAddressV", "address"]
+- ["20AmazonOrderExtractor12EmailAddressV", "type"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "senderEmail"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "getOrderNumber"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "getWebsite"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "getOrderSummaryLink"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- !private "AEKeyword"
+- !private "AmazonOrderExtractor"
+- "AnyHashable"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- "EmailAddress"
+- !private "MicrosoftOutlookApplication"
+- "MicrosoftOutlookEmailAddressType"
+- "MicrosoftOutlookMessage"
+- !private "Regex"
+- "String"
+- "StringLiteralType"
+- "URL"
+- !private "application"
+- "getMessages"
+- !private "getOrderNumber"
+- "makeOrderSummaryLink"
+- !private "parse"
+- "printListOfLinks"
+- "receiptCategory"
+- "regexPattern"
+- "searchString"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "first"]
+- !private ["Sa", "init"]
+- !private ["Sa", "map"]
+- !private ["Sa", "reduce"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "first"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "map"]
+- !private ["s13ArrayProtocolP", "reduce"]
+- !private ["9SwiftSoup9AttributeC", "getKey"]
+- !private ["9SwiftSoup9AttributeC", "getValue"]
+- !private ["9SwiftSoup10AttributesC", "filter"]
+- !private ["SK", "append"]
+- !private ["SK", "contains"]
+- !private ["SK", "first"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["SK", "lowercased"]
+- !private ["SK", "map"]
+- !private ["SK", "range"]
+- !private ["SK", "reduce"]
+- !private ["SK", "write"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "first"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "lowercased"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "range"]
+- !private ["s7CVarArgP", "reduce"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "write"]
+- !private ["Sl", "append"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "first"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["Sl", "lowercased"]
+- !private ["Sl", "map"]
+- !private ["Sl", "range"]
+- !private ["Sl", "reduce"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "write"]
+- !private ["SL", "contains"]
+- ["SL", "init"]
+- ["SL", "init"]
+- !private ["SL", "lowercased"]
+- !private ["SL", "range"]
+- !private ["SL", "write"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "attr"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "firstMatch"]
+- !private ["s28CustomDebugStringConvertibleP", "getAttributes"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "lowercased"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "range"]
+- !private ["s28CustomDebugStringConvertibleP", "reduce"]
+- !private ["s28CustomDebugStringConvertibleP", "select"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "write"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "contains"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "lowercased"]
+- !private ["s29CustomPlaygroundQuickLookableP", "range"]
+- !private ["s29CustomPlaygroundQuickLookableP", "write"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "first"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "lowercased"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "range"]
+- !private ["s17CustomReflectableP", "reduce"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "write"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "attr"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "firstMatch"]
+- !private ["s23CustomStringConvertibleP", "getAttributes"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "lowercased"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "range"]
+- !private ["s23CustomStringConvertibleP", "reduce"]
+- !private ["s23CustomStringConvertibleP", "select"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "utf8"]
+- !private ["s23CustomStringConvertibleP", "write"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "contains"]
+- !private ["Se", "first"]
+- !private ["Se", "firstMatch"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "lowercased"]
+- !private ["Se", "map"]
+- !private ["Se", "range"]
+- !private ["Se", "reduce"]
+- !private ["Se", "subscript"]
+- !private ["Se", "write"]
+- !private ["SD", "subscript"]
+- !private ["9SwiftSoup8DocumentC", "select"]
+- !private ["9SwiftSoup7ElementC", "attr"]
+- !private ["9SwiftSoup7ElementC", "getAttributes"]
+- !private ["9SwiftSoup7ElementC", "select"]
+- !private ["9SwiftSoup8ElementsC", "first"]
+- !private ["20AmazonOrderExtractor12EmailAddressV", "AEKeyword"]
+- ["20AmazonOrderExtractor12EmailAddressV", "AnyHashable"]
+- ["20AmazonOrderExtractor12EmailAddressV", "MicrosoftOutlookEmailAddressType"]
+- ["20AmazonOrderExtractor12EmailAddressV", "String"]
+- ["20AmazonOrderExtractor12EmailAddressV", "address"]
+- !private ["20AmazonOrderExtractor12EmailAddressV", "init"]
+- ["20AmazonOrderExtractor12EmailAddressV", "name"]
+- !private ["20AmazonOrderExtractor12EmailAddressV", "originalObject"]
+- ["20AmazonOrderExtractor12EmailAddressV", "type"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "contains"]
+- !private ["SE", "first"]
+- !private ["SE", "firstMatch"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "lowercased"]
+- !private ["SE", "map"]
+- !private ["SE", "range"]
+- !private ["SE", "reduce"]
+- !private ["SE", "subscript"]
+- !private ["SE", "write"]
+- !private ["SS10FoundationE8EncodingV", "utf8"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "append"]
+- !private ["SQ", "attr"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "first"]
+- !private ["SQ", "firstMatch"]
+- !private ["SQ", "getAttributes"]
+- !private ["SQ", "getKey"]
+- !private ["SQ", "getValue"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "lowercased"]
+- !private ["SQ", "map"]
+- !private ["SQ", "range"]
+- !private ["SQ", "reduce"]
+- !private ["SQ", "select"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "utf8"]
+- !private ["SQ", "write"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "reduce"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contains"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "range"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "write"]
+- !private ["s26ExpressibleByStringLiteralP", "contains"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "lowercased"]
+- !private ["s26ExpressibleByStringLiteralP", "range"]
+- !private ["s26ExpressibleByStringLiteralP", "write"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "contains"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "range"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "write"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "append"]
+- !private ["SH", "attr"]
+- !private ["SH", "contains"]
+- !private ["SH", "filter"]
+- !private ["SH", "first"]
+- !private ["SH", "firstMatch"]
+- !private ["SH", "getAttributes"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "lowercased"]
+- !private ["SH", "map"]
+- !private ["SH", "range"]
+- !private ["SH", "reduce"]
+- !private ["SH", "select"]
+- !private ["SH", "subscript"]
+- !private ["SH", "utf8"]
+- !private ["SH", "write"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "contains"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "lowercased"]
+- !private ["s25LosslessStringConvertibleP", "range"]
+- !private ["s25LosslessStringConvertibleP", "write"]
+- !private ["5Regex11MatchResultV", "captures"]
+- !private ["25MicrosoftOutlookScripting0aB11ApplicationP", "activate"]
+- !private ["25MicrosoftOutlookScripting0aB11ApplicationP", "inbox"]
+- !private ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "AmazonOrderExtractor"]
+- ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "EmailAddress"]
+- ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "String"]
+- !private ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "categories"]
+- !private ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "content"]
+- !private ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "getOrderNumber"]
+- !private ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "getOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "getWebsite"]
+- !private ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "makeOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "sender"]
+- !private ["25MicrosoftOutlookScripting0aB19CategorizableObjectP", "senderEmail"]
+- !private ["25MicrosoftOutlookScripting0aB8CategoryP", "name"]
+- !private ["25MicrosoftOutlookScripting0aB16EmailAddressTypeO", "init"]
+- !private ["25MicrosoftOutlookScripting0aB6FolderP", "messages"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "AmazonOrderExtractor"]
+- ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "EmailAddress"]
+- ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "String"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "categories"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "content"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "getOrderNumber"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "getOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "getWebsite"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "makeOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "messages"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "name"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "sender"]
+- !private ["25MicrosoftOutlookScripting0aB14GenericMethodsP", "senderEmail"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "AmazonOrderExtractor"]
+- ["25MicrosoftOutlookScripting0aB4ItemP", "EmailAddress"]
+- ["25MicrosoftOutlookScripting0aB4ItemP", "String"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "categories"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "content"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "getOrderNumber"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "getOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "getWebsite"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "makeOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "messages"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "name"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "sender"]
+- !private ["25MicrosoftOutlookScripting0aB4ItemP", "senderEmail"]
+- !private ["25MicrosoftOutlookScripting0aB10MailFolderP", "messages"]
+- !private ["25MicrosoftOutlookScripting0aB7MessageP", "AmazonOrderExtractor"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "EmailAddress"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "String"]
+- !private ["25MicrosoftOutlookScripting0aB7MessageP", "categories"]
+- !private ["25MicrosoftOutlookScripting0aB7MessageP", "content"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "getOrderNumber"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "getOrderSummaryLink"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "getWebsite"]
+- !private ["25MicrosoftOutlookScripting0aB7MessageP", "makeOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB7MessageP", "sender"]
+- ["25MicrosoftOutlookScripting0aB7MessageP", "senderEmail"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "AmazonOrderExtractor"]
+- ["25MicrosoftOutlookScripting0aB6ObjectP", "EmailAddress"]
+- ["25MicrosoftOutlookScripting0aB6ObjectP", "String"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "categories"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "content"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "getOrderNumber"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "getOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "getWebsite"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "makeOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "messages"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "name"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "sender"]
+- !private ["25MicrosoftOutlookScripting0aB6ObjectP", "senderEmail"]
+- !private ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "AmazonOrderExtractor"]
+- ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "EmailAddress"]
+- ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "String"]
+- !private ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "categories"]
+- !private ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "content"]
+- !private ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "getOrderNumber"]
+- !private ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "getOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "getWebsite"]
+- !private ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "makeOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "sender"]
+- !private ["25MicrosoftOutlookScripting0aB14TodoableObjectP", "senderEmail"]
+- !private ["s10MirrorPathP", "contains"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "lowercased"]
+- !private ["s10MirrorPathP", "range"]
+- !private ["s10MirrorPathP", "write"]
+- !private ["SM", "append"]
+- !private ["SM", "first"]
+- !private ["SM", "init"]
+- !private ["SM", "map"]
+- !private ["SM", "reduce"]
+- !private ["So7NSArrayC", "filter"]
+- !private ["So8NSCodingP", "contains"]
+- !private ["So8NSCodingP", "filter"]
+- !private ["So8NSCodingP", "lowercased"]
+- !private ["So8NSCodingP", "range"]
+- !private ["So8NSCodingP", "write"]
+- !private ["So9NSCopyingP", "contains"]
+- !private ["So9NSCopyingP", "filter"]
+- !private ["So9NSCopyingP", "first"]
+- !private ["So9NSCopyingP", "lowercased"]
+- !private ["So9NSCopyingP", "range"]
+- !private ["So9NSCopyingP", "write"]
+- !private ["So17NSFastEnumerationP", "filter"]
+- !private ["So21NSItemProviderReadingP", "contains"]
+- !private ["So21NSItemProviderReadingP", "lowercased"]
+- !private ["So21NSItemProviderReadingP", "range"]
+- !private ["So21NSItemProviderReadingP", "write"]
+- !private ["So21NSItemProviderWritingP", "contains"]
+- !private ["So21NSItemProviderWritingP", "lowercased"]
+- !private ["So21NSItemProviderWritingP", "range"]
+- !private ["So21NSItemProviderWritingP", "write"]
+- !private ["So14NSMutableArrayC", "filter"]
+- !private ["So16NSMutableCopyingP", "contains"]
+- !private ["So16NSMutableCopyingP", "filter"]
+- !private ["So16NSMutableCopyingP", "lowercased"]
+- !private ["So16NSMutableCopyingP", "range"]
+- !private ["So16NSMutableCopyingP", "write"]
+- !private ["So8NSObjectC", "contains"]
+- !private ["So8NSObjectC", "filter"]
+- !private ["So8NSObjectC", "lowercased"]
+- !private ["So8NSObjectC", "range"]
+- !private ["So8NSObjectC", "write"]
+- !private ["So8NSObjectP", "AmazonOrderExtractor"]
+- ["So8NSObjectP", "EmailAddress"]
+- ["So8NSObjectP", "String"]
+- !private ["So8NSObjectP", "activate"]
+- !private ["So8NSObjectP", "categories"]
+- !private ["So8NSObjectP", "contains"]
+- !private ["So8NSObjectP", "content"]
+- !private ["So8NSObjectP", "filter"]
+- !private ["So8NSObjectP", "getOrderNumber"]
+- !private ["So8NSObjectP", "getOrderSummaryLink"]
+- !private ["So8NSObjectP", "getWebsite"]
+- !private ["So8NSObjectP", "inbox"]
+- !private ["So8NSObjectP", "lowercased"]
+- !private ["So8NSObjectP", "makeOrderSummaryLink"]
+- !private ["So8NSObjectP", "messages"]
+- !private ["So8NSObjectP", "name"]
+- !private ["So8NSObjectP", "range"]
+- !private ["So8NSObjectP", "sender"]
+- !private ["So8NSObjectP", "senderEmail"]
+- !private ["So8NSObjectP", "write"]
+- !private ["So19NSPasteboardReadingP", "contains"]
+- !private ["So19NSPasteboardReadingP", "lowercased"]
+- !private ["So19NSPasteboardReadingP", "range"]
+- !private ["So19NSPasteboardReadingP", "write"]
+- !private ["So19NSPasteboardWritingP", "contains"]
+- !private ["So19NSPasteboardWritingP", "lowercased"]
+- !private ["So19NSPasteboardWritingP", "range"]
+- !private ["So19NSPasteboardWritingP", "write"]
+- !private ["So14NSSecureCodingP", "contains"]
+- !private ["So14NSSecureCodingP", "filter"]
+- !private ["So14NSSecureCodingP", "lowercased"]
+- !private ["So14NSSecureCodingP", "range"]
+- !private ["So14NSSecureCodingP", "write"]
+- !private ["So8NSStringC", "contains"]
+- !private ["So8NSStringC", "lowercased"]
+- !private ["So8NSStringC", "range"]
+- !private ["So8NSStringC", "write"]
+- !private ["9SwiftSoup4NodeC", "attr"]
+- !private ["9SwiftSoup4NodeC", "getAttributes"]
+- !private ["9SwiftSoup4NodeC", "select"]
+- !private ["Sk", "append"]
+- !private ["Sk", "first"]
+- !private ["Sk", "init"]
+- !private ["Sk", "map"]
+- !private ["Sk", "reduce"]
+- !private ["Sm", "append"]
+- !private ["Sm", "contains"]
+- !private ["Sm", "first"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["Sm", "lowercased"]
+- !private ["Sm", "map"]
+- !private ["Sm", "range"]
+- !private ["Sm", "reduce"]
+- !private ["Sm", "write"]
+- !private ["SY", "init"]
+- !private ["SY", "utf8"]
+- !private ["5RegexAAV", "firstMatch"]
+- !private ["5RegexAAV", "init"]
+- !private ["25MicrosoftOutlookScripting21SBApplicationProtocolP", "activate"]
+- !private ["25MicrosoftOutlookScripting21SBApplicationProtocolP", "inbox"]
+- !private ["So14SBElementArrayC", "filter"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "AmazonOrderExtractor"]
+- ["25MicrosoftOutlookScripting16SBObjectProtocolP", "EmailAddress"]
+- ["25MicrosoftOutlookScripting16SBObjectProtocolP", "String"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "activate"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "categories"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "content"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "getOrderNumber"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "getOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "getWebsite"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "inbox"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "makeOrderSummaryLink"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "messages"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "name"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "sender"]
+- !private ["25MicrosoftOutlookScripting16SBObjectProtocolP", "senderEmail"]
+- !private ["ST", "append"]
+- !private ["ST", "contains"]
+- !private ["ST", "filter"]
+- !private ["ST", "first"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["ST", "lowercased"]
+- !private ["ST", "map"]
+- !private ["ST", "range"]
+- !private ["ST", "reduce"]
+- !private ["ST", "subscript"]
+- !private ["ST", "write"]
+- ["SS", "Bool"]
+- ["SS", "String"]
+- ["SS", "contains"]
+- ["SS", "init"]
+- ["SS", "init"]
+- !private ["SS", "lowercased"]
+- !private ["SS", "range"]
+- !private ["SS", "write"]
+- !private ["Sy", "contains"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- !private ["Sy", "lowercased"]
+- !private ["Sy", "range"]
+- !private ["Sy", "write"]
+- !private ["s16TextOutputStreamP", "contains"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "lowercased"]
+- !private ["s16TextOutputStreamP", "range"]
+- !private ["s16TextOutputStreamP", "write"]
+- !private ["s20TextOutputStreamableP", "contains"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "lowercased"]
+- !private ["s20TextOutputStreamableP", "range"]
+- !private ["s20TextOutputStreamableP", "write"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s24_DestructorSafeContainerP", "reduce"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "contains"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "range"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "write"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "contains"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "lowercased"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "range"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "write"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "contains"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "lowercased"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "range"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "write"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "contains"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "range"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "write"]
+- !private ["s33_ExpressibleByStringInterpolationP", "contains"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "lowercased"]
+- !private ["s33_ExpressibleByStringInterpolationP", "range"]
+- !private ["s33_ExpressibleByStringInterpolationP", "write"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "range"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reduce"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "write"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "filter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "range"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "write"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "lowercased"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "range"]
+- !private ["s21_ObjectiveCBridgeableP", "reduce"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "write"]
+- !private ["s16_SwiftStringViewP", "contains"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "lowercased"]
+- !private ["s16_SwiftStringViewP", "range"]
+- !private ["s16_SwiftStringViewP", "write"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "9SwiftSoup9AttributeC"
+- !private "9SwiftSoup10AttributesC"
+- "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "SD"
+- !private "9SwiftSoup8DocumentC"
+- !private "9SwiftSoup7ElementC"
+- !private "9SwiftSoup8ElementsC"
+- "20AmazonOrderExtractor12EmailAddressV"
+- "SE"
+- !private "SS10FoundationE8EncodingV"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- "s25LosslessStringConvertibleP"
+- !private "5Regex11MatchResultV"
+- !private "25MicrosoftOutlookScripting0aB11ApplicationP"
+- "25MicrosoftOutlookScripting0aB19CategorizableObjectP"
+- !private "25MicrosoftOutlookScripting0aB8CategoryP"
+- !private "25MicrosoftOutlookScripting0aB16EmailAddressTypeO"
+- !private "25MicrosoftOutlookScripting0aB6FolderP"
+- "25MicrosoftOutlookScripting0aB14GenericMethodsP"
+- "25MicrosoftOutlookScripting0aB4ItemP"
+- !private "25MicrosoftOutlookScripting0aB10MailFolderP"
+- "25MicrosoftOutlookScripting0aB7MessageP"
+- "25MicrosoftOutlookScripting0aB6ObjectP"
+- "25MicrosoftOutlookScripting0aB14TodoableObjectP"
+- "s10MirrorPathP"
+- !private "SM"
+- !private "So7NSArrayC"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So17NSFastEnumerationP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So14NSMutableArrayC"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So19NSPasteboardReadingP"
+- !private "So19NSPasteboardWritingP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "9SwiftSoup4NodeC"
+- !private "Sk"
+- "Sm"
+- !private "SY"
+- !private "5RegexAAV"
+- !private "25MicrosoftOutlookScripting21SBApplicationProtocolP"
+- !private "So14SBElementArrayC"
+- "25MicrosoftOutlookScripting16SBObjectProtocolP"
+- "ST"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ScriptingBridge.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/MicrosoftOutlookScripting.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/SwiftSoup.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/ScriptingUtilities.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/Regex.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d9d8b3c45754a684791910abba884c7f"

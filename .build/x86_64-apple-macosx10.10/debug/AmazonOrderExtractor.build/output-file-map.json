@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/AmazonOrderExtractor.build/master.swiftdeps"
+  },
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/AmazonOrderExtractor.git--3769180048078329397/Sources/AmazonOrderExtractor/AmazonOrderExtractor.swift": {
+    "dependencies": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/AmazonOrderExtractor.build/AmazonOrderExtractor.d",
+    "object": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/AmazonOrderExtractor.build/AmazonOrderExtractor.swift.o",
+    "swiftmodule": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/AmazonOrderExtractor.build/AmazonOrderExtractor~partial.swiftmodule",
+    "swift-dependencies": "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/x86_64-apple-macosx10.10/debug/AmazonOrderExtractor.build/AmazonOrderExtractor.swiftdeps"
+  }
+}

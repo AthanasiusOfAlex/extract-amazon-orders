@@ -1,0 +1,11 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "2ab8278d5322fcb75496043373369824"
+build_time: [1544210510, 122046000]
+inputs:
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/Regex.git-833338002637109913/Source/Foundation+Ranges.swift": [1544173180, 0]
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/Regex.git-833338002637109913/Source/MatchResult.swift": [1544173180, 0]
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/Regex.git-833338002637109913/Source/Memo.swift": [1544173180, 0]
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/Regex.git-833338002637109913/Source/Options.swift": [1544173180, 0]
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/Regex.git-833338002637109913/Source/Regex.swift": [1544173180, 0]
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/Regex.git-833338002637109913/Source/String+ReplaceMatching.swift": [1544173180, 0]
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/Regex.git-833338002637109913/Source/ThreadLocal.swift": [1544173180, 0]

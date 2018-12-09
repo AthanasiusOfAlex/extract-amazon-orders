@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "ba02403063ee8a200e59d1e238731a82"
+build_time: [1544210518, 632210000]
+inputs:
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/MicrosoftOutlookScripting.git--7092685290658155050/Sources/MicrosoftOutlookScripting/MicrosoftOutlook.swift": [1544105138, 0]
+  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/MicrosoftOutlookScripting.git--7092685290658155050/Sources/MicrosoftOutlookScripting/MicrosoftOutlookScripting.swift": [1544105138, 0]

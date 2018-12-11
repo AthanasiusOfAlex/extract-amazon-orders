@@ -118,13 +118,13 @@
          isa = "PBXGroup";
          children = (
             "PathKit::PathKit::Product",
-            "extract-amazon-orders::extract-amazon-orders::Product",
-            "SwiftSoup::SwiftSoup::Product",
-            "AmazonOrderExtractor::AmazonOrderExtractor::Product",
-            "ScriptingUtilities::ScriptingUtilities::Product",
-            "extract-amazon-orders::extract-amazon-ordersTests::Product",
             "MicrosoftOutlookScripting::MicrosoftOutlookScripting::Product",
-            "Regex::Regex::Product"
+            "Regex::Regex::Product",
+            "extract-amazon-orders::extract-amazon-ordersTests::Product",
+            "ScriptingUtilities::ScriptingUtilities::Product",
+            "extract-amazon-orders::extract-amazon-orders::Product",
+            "AmazonOrderExtractor::AmazonOrderExtractor::Product",
+            "SwiftSoup::SwiftSoup::Product"
          );
          name = "Products";
          path = "";

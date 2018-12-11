@@ -117,14 +117,14 @@
       "OBJ_100" = {
          isa = "PBXGroup";
          children = (
-            "Regex::Regex::Product",
-            "MicrosoftOutlookScripting::MicrosoftOutlookScripting::Product",
-            "ScriptingUtilities::ScriptingUtilities::Product",
+            "PathKit::PathKit::Product",
             "extract-amazon-orders::extract-amazon-orders::Product",
             "SwiftSoup::SwiftSoup::Product",
+            "AmazonOrderExtractor::AmazonOrderExtractor::Product",
+            "ScriptingUtilities::ScriptingUtilities::Product",
             "extract-amazon-orders::extract-amazon-ordersTests::Product",
-            "PathKit::PathKit::Product",
-            "AmazonOrderExtractor::AmazonOrderExtractor::Product"
+            "MicrosoftOutlookScripting::MicrosoftOutlookScripting::Product",
+            "Regex::Regex::Product"
          );
          name = "Products";
          path = "";
@@ -1225,7 +1225,7 @@
             "OBJ_22"
          );
          name = "PathKit";
-         path = ".build/checkouts/PathKit.git-3123141174771159462/Sources";
+         path = ".build/checkouts/PathKit.git-777362227326566726/Sources";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_200" = {
@@ -1272,7 +1272,7 @@
          isa = "PBXFileReference";
          explicitFileType = "sourcecode.swift";
          name = "Package.swift";
-         path = "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/PathKit.git-3123141174771159462/Package.swift";
+         path = "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/PathKit.git-777362227326566726/Package.swift";
          sourceTree = "<group>";
       };
       "OBJ_210" = {
@@ -1373,7 +1373,7 @@
             "OBJ_31"
          );
          name = "Regex";
-         path = ".build/checkouts/Regex.git-6941589628664108421/Source";
+         path = ".build/checkouts/Regex.git--468863551609995105/Source";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_230" = {
@@ -1420,7 +1420,7 @@
          isa = "PBXFileReference";
          explicitFileType = "sourcecode.swift";
          name = "Package.swift";
-         path = "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/Regex.git-6941589628664108421/Package.swift";
+         path = "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/Regex.git--468863551609995105/Package.swift";
          sourceTree = "<group>";
       };
       "OBJ_240" = {

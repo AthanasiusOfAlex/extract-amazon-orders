@@ -19,38 +19,60 @@ do {
 
 // MARK - print the messages
 
-public extension Date {
-    
-    private func getName(withFormat format: String) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format
-        return dateFormatter.string(from: self)
+public extension String {
+    /// Removes n characters from the end of the string, if possible,
+    /// leaving an empty string if the string is not long enough.
+    func truncating(by n: Int) -> String {
+        guard self.count > n else { return "" }
+        return String(self.prefix(self.count - n))
     }
     
-    public func getMonthName() -> String { return getName(withFormat: "MM") }
-    public func getYearName() -> String { return getName(withFormat: "yyyy") }
-    public func getDayName() -> String { return getName(withFormat: "dd") }
+    /// Removes n characters from the beginning of the string, if possible,
+    /// leaving an empty string if the string is not long enough.
+    func decapitating(by n: Int) -> String {
+        guard self.count > n else { return "" }
+        return String(self.suffix(self.count - n))
+    }
 }
 
-do {
-    func runAppleScript(script: String) {
-        let script = NSAppleScript(source: script)!
-        var dict = NSDictionary()
-        withUnsafeMutablePointer(to: &dict) {
-            let errorInfo = AutoreleasingUnsafeMutablePointer<NSDictionary?>($0)
-            script.executeAndReturnError(errorInfo)
+public extension URL {
+    private func getStraightPath(fromPrefixedPath path: String) -> String {
+        let prefixToken = "file://"
+        let actualPrefix = path.prefix(prefixToken.count)
+        
+        if prefixToken==actualPrefix {
+            return path.decapitating(by: prefixToken.count)
+        } else {
+            return path
         }
     }
     
-    let desktop = FileManager.default.urls(for: .desktopDirectory, in: .userDomainMask).first!
-    let outputFolderURL = desktop.appendingPathComponent("PDF").absoluteString
-    let outputFolder = outputFolderURL.suffix(outputFolderURL.count - 7)
+    var straightAbsoluteString: String {
+        return getStraightPath(fromPrefixedPath: self.absoluteString)
+    }
+    
+    var straightRelativeString: String {
+        return getStraightPath(fromPrefixedPath: self.relativeString)
+    }
+}
+
+public extension FileManager {
+    static var desktop: URL {
+        return FileManager.default.urls(for: .desktopDirectory, in: .userDomainMask).first!
+    }
+}
+
+import ScriptingBridge
+
+do {
+    let outputFolder = FileManager.desktop.appendingPathComponent("PDF").straightAbsoluteString
     print(outputFolder)
     let today = Date()
     let year = today.getYearName()
     let month = today.getMonthName()
     let day = today.getDayName()
     
+    let scriptOFF = ""
     let script = """
 tell application "Google Chrome"
     set myWindow to front window
@@ -122,6 +144,6 @@ tell application "Google Chrome"
     end repeat
 end tell
 """
-    runAppleScript(script: script)
+    runAppleScript(appleScript: script)
     
 }

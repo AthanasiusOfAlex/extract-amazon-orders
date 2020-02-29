@@ -84,6 +84,8 @@ tell application "Google Chrome"
     
     set myDelay to 0.2
 
+    delay 3
+    
     repeat with myTab in myTabs
         set myCount to myCount + 1
         set fileName to "\(year)-\(month)-\(day)-amazon-nnnn" & myCount & ".pdf"

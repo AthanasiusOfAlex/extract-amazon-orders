@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "d1f00548d86c1e70b34c5ed0acc34529"
-build_time: [1544210510, 122052000]
-inputs:
-  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/ScriptingUtilities.git--2007011613481348713/Sources/ScriptingUtilities/AppUtilities.swift": [1544105138, 0]
-  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/.build/checkouts/ScriptingUtilities.git--2007011613481348713/Sources/ScriptingUtilities/SundryUtilities.swift": [1544115104, 0]

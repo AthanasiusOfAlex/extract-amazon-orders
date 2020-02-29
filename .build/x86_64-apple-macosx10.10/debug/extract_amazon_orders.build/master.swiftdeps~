@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "18840dc99d513ae9ec026edc4a4e597e"
-build_time: [1544213919, 381466000]
-inputs:
-  "/Users/louismelahn/Documents/Projects/extract-amazon-orders/Sources/extract-amazon-orders/main.swift": [1544213908, 0]

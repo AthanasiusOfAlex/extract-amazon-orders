@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/AthanasiusOfAlex/AmazonOrderExtractor.git",
         "state": {
           "branch": "master",
-          "revision": "a252c390e35cc359b7c91c43c2a9b0b4b666705a",
+          "revision": "c75a93b867ced9bcbe21dc9476088d699d5cd5bb",
           "version": null
         }
       },
@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/sharplet/Regex.git",
         "state": {
           "branch": "master",
-          "revision": "0b18d20fbc9c279cf6493dd0fd431ebb40a7741b",
+          "revision": "4551ab30d10f51326a7f04a5a8207658239a1586",
           "version": null
         }
       },
@@ -42,7 +42,7 @@
         "repositoryURL": "https://github.com/scinfu/SwiftSoup.git",
         "state": {
           "branch": "master",
-          "revision": "11da8c685ddde2d519fad04a7daf8485bbbc773e",
+          "revision": "7f187fd8804e63dea89879c95d7c2f7703727d0f",
           "version": null
         }
       }
